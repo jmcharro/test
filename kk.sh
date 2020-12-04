@@ -1,7 +1,0 @@
-#!/bin/bash
-
-cp local.conf local.conf.OLD
-
-bash <(curl -s https://raw.githubusercontent.com/cynixx3/third-party-miner-installer-for-ethos/master/miner-manager) phoenixminer install
-
-sed -i 's/claymore/phoenixminer/g' local.conf
